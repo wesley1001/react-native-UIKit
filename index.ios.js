@@ -30,9 +30,12 @@ import Gallery from './components/gallery'
 import InputField from './components/input-field'
 
 import Calendar from './components/CalendarIOS'
+import ThumbGrid from './components/thumbgrid'
 
 const App = () => (
     <ScrollView style={styles.container}>
+
+    <ThumbGrid/>
 
       <Calendar
         scrollEnabled={true}              // False disables swiping. Default: True
