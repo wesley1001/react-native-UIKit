@@ -28,6 +28,7 @@ import LikeBtn from './components/like-btn'
 
 import Gallery from './components/gallery'
 import InputField from './components/input-field'
+import Time from './components/time'
 
 import Calendar from './components/CalendarIOS'
 import ThumbGrid from './components/thumbgrid'
@@ -79,6 +80,7 @@ const App = () => (
       </View>
 
       <View style={styles.block}>
+        <Time timestamp={1460227647478}/>
         <InputField/>
         <LikeBtn liked={true} likes={232} toggle={() => alert('liked')}/>
         <Button radius={5}>Submit</Button>
