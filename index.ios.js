@@ -32,13 +32,14 @@ import Time from './components/time'
 
 import Calendar from './components/CalendarIOS'
 import ThumbGrid from './components/thumbgrid'
+import ThumbSwiper from './components/thumb-swiper'
 
 const App = () => (
     <ScrollView style={styles.container}>
 
     <ThumbGrid/>
 
-      <Calendar
+      {/*<Calendar
         scrollEnabled={true}              // False disables swiping. Default: True
         showControls={true}               // False hides prev/next buttons. Default: False
         titleFormat={'MMMM YYYY'}         // Format for displaying current month. Default: 'MMMM YYYY'
@@ -54,7 +55,7 @@ const App = () => (
         startDate={'2016-04-01'}          // The first month that will display. Default: current month
         selectedDate={'2015-08-15'}       // Day to be selected
         customStyle={{day: {fontSize: 15, textAlign: 'center'}}} // Customize any pre-defined styles
-       />
+       />*/}
       {/*<Gallery/>*/}
 
       <View style={styles.block}>
@@ -77,6 +78,7 @@ const App = () => (
           <Text>Comment</Text>
           <Text>Share</Text>
         </View>
+        <ThumbSwiper/>
       </View>
 
       <View style={styles.block}>
